@@ -49,14 +49,14 @@ module.exports = {
               sourceMap: true,
               includePaths: [
                 path.resolve(__dirname, 'node_modules'),
-                path.resolve(__dirname, 'src', 'style'),
+                path.resolve(__dirname, 'src'),
               ],
             },
           },
         ]
       },
       {
-        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        test: /\.(gif|png|woff|woff2|eot|ttf|svg)$/,
         loader: 'url-loader?limit=100000'
       }
     ]
@@ -81,7 +81,7 @@ module.exports = {
     open: true,
     historyApiFallback: true,
     inline: true,
-    contentBase: path.resolve(__dirname, "dist"),
+    contentBase: path.resolve(__dirname, outputDirectory),
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",

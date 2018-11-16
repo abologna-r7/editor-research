@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700');
+@import '../node_modules/quill/dist/quill.snow.css';
+@import '../public/skins/lightgray/skin.min.css';
+
+/** Basic formatting */
+a{
+  color: #555;
+}
+body {
+  font-size: 18px;
+  font-family: 'Noto Sans TC', sans-serif;
+
+  header {
+    h1 {
+      text-transform: capitalize;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
