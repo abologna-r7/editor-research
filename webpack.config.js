@@ -63,7 +63,7 @@ module.exports = {
   },
   resolve: {
     unsafeCache: true,
-    modules: ['./src/scripts', 'node_modules'],
+    modules: ['src', 'node_modules'],
     extensions: [
       '.js',
       '.jsx',
@@ -100,6 +100,6 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
-    }),
+    })
   ]
 };
