@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import CKEditor from './editors/ck/Editor';
 import TinyMCE from './editors/tiny/Editor';
 import Quill from './editors/quill/Editor';
+import Grapes from './editors/grapes/Editor'
 import './base.scss';
 
 export default class App extends PureComponent {
@@ -31,6 +32,7 @@ export default class App extends PureComponent {
       'ck': <CKEditor />,
       'tiny': <TinyMCE />,
       'quill': <Quill />,
+      'grapes': <Grapes />,
     }[currentEditor];
   }
 
@@ -68,6 +70,14 @@ export default class App extends PureComponent {
               onClick={this.setEditor}
             >
               QuillJS
+            </a>
+          </li>
+          <li>
+            <a
+              name="grapes"
+              href="#"
+              onClick={this.setEditor}
+            >GrapesJS
             </a>
           </li>
         </ul>
